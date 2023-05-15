@@ -1,0 +1,29 @@
+import streamlit as st
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import plotly_express as px
+from streamlit_option_menu import option_menu
+
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://assets.laliga.com/assets/logos/laliga-h/laliga-h-1200x1200.png");
+             background-size: 1300px 700px;
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
+
+
+st.title("¿Qué se debe mejorar?")
+st.text("-Complicado competir con menor capacidad económica.")
+st.text("-El talento está muy focalizado en un par de clubes.")
+st.text("-Demasiadas interrupciones en el juego.")
+st.image("LIGAS\Streamlit\Imagen1.png",width=400)
